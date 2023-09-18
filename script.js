@@ -32,7 +32,9 @@ function toggleDarkMode() {
 
     // Verifica se o modo noturno está ativado
     if (document.body.classList.contains('dark-mode')) {
-        tituloH2.textContent = 'Quem é Krampus?';
+        tituloH2.textContent = 'Krampus é uma criatura mitológica que acompanha São Nicolau durante a época do Natal, segundo lendas de várias regiões do mundo.
+            A palavra Krampus vem de Krampen, palavra para "garra" do alto alemão antigo.
+            Nos Alpes, Krampus é representado por uma criatura semelhante a um demônio.';
     } else {
         tituloH2.textContent = 'O que é o Natal?';
     }
@@ -88,7 +90,10 @@ function toggleDarkMode() {
 
     // Verifica se o modo noturno está ativado
     if (document.body.classList.contains('dark-mode')) {
-        para2.textContent = 'Paragrafo2 Teste';
+        para2.textContent = 'Krampus é uma figura lendária com raízes na Áustria, Baviera e Europa Central.
+            Ele é a contraparte demoníaca do Papai Noel e assusta crianças desobedientes durante o Natal.
+            Sua origem remonta a tradições pagãs e ele é representado como uma criatura com chifres, pele peluda e garras, punindo crianças más.
+            Atualmente, as celebrações do Krampus, como desfiles e festas, ganharam popularidade além de sua região de origem.';
     } else {
         para2.textContent = "Personagens do Natal" ;
     }
