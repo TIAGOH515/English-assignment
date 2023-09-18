@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Mooli;
+    src: url(./Mooli-Regular.ttf);
+}
+
+body {
+    font-family: Mooli;
+    width: 980px;
+    margin: auto;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 980px;
+    margin: 0;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilo para o modo noturno */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode a {
+    color: #ff5722;
+}
+
+.dark-mode header {
+    background-color: #333;
+}
+
+.dark-mode p {
+    color: black;
+}
+
+nav {
+    width: 900px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#logo {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 100px;
+}
+
+#label {
+    width: 50px;
+    position: absolute;
+    top: 5px;
+}
+
+/* Estilo para destacar o link ativo no menu */
+nav a.active {
+    color: #e53935;
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    width: 600px;
+    list-style-type: none;
+    margin: auto;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+}
+
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    font-family: Mooli, Arial, sans-serif;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px black solid;
+}
+
+
+section {
+    margin-bottom: 20px;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section p {
+    font-size: 30px;
+
+}
+
+#experiencia h1, p{
+    text-align: center;
+}
+
+#audio {
+    width: 300px;
+    margin: auto;
+}
+
+audio {
+    width: 300px;
+}
+
+section h2 {
+    font-size: 40px;
+    color: #e53935;
+}
+
+footer {
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+}
+
+
+#rodapé {
+    width: 90px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#rodapé2 {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+a {
+    color: #e53935;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #c62828;
+}
+
+
+.botão {
+    background-color: white;
+    height: 38px;
+    width: 80px;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    left: 750px;
+    top: 0px;
+}
+
+.botão:before {
+    content: "";
+    background-color: black;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 2px black solid;
+    border-radius: 100px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    transition: left 0.25s;
+}
+
+input {
+    visibility: hidden;
+}
+
+input:checked+.botão {
+    background-color: white;
+}
+
+input:checked+.botão:before {
+    left: 45px;
+}
