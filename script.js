@@ -1,5 +1,10 @@
-var Historia = "O Natal é uma festa cristã que celebra o nascimento de Jesus Cristo e também é uma celebração cultural. Suas características incluem missas religiosas, montagem de árvores de Natal decoradas, troca de presentes, decorações festivas, a figura de São Nicolau (Papai Noel), músicas natalinas e refeições especiais. O Natal promove o espírito de generosidade, solidariedade e união familiar e comunitária."
+var historia = "O Natal é uma festa cristã que celebra o nascimento de Jesus Cristo e também é uma celebração cultural. Suas características incluem missas religiosas, montagem de árvores de Natal decoradas, troca de presentes, decorações festivas, a figura de São Nicolau (Papai Noel), músicas natalinas e refeições especiais. O Natal promove o espírito de generosidade, solidariedade e união familiar e comunitária."
 
+var krampus = "Krampus é uma criatura mitológica que acompanha São Nicolau durante a época do Natal, segundo lendas de várias regiões do mundo.A palavra Krampus vem de Krampen, palavra para 'garra' do alto alemão antigo.Nos Alpes, Krampus é representado por uma criatura semelhante a um demônio."
+
+var origem = "Krampus é uma figura lendária com raízes na Áustria, Baviera e Europa Central,Ele é a contraparte demoníaca do Papai Noel e assusta crianças desobedientes durante o Natal.Sua origem remonta a tradições pagãs e ele é representado como uma criatura com chifres, pele peluda e garras, punindo crianças más.Atualmente, as celebrações do Krampus, como desfiles e festas, ganharam popularidade além de sua região de origem.";
+
+var quemÉ = "Quem é Krampus?"
 // Função para destacar a página ativa no menu de navegação
 function highlightActivePage() {
     const currentPage = window.location.hash;
@@ -32,11 +37,9 @@ function toggleDarkMode() {
 
     // Verifica se o modo noturno está ativado
     if (document.body.classList.contains('dark-mode')) {
-        tituloH2.textContent = 'Krampus é uma criatura mitológica que acompanha São Nicolau durante a época do Natal, segundo lendas de várias regiões do mundo.
-            A palavra Krampus vem de Krampen, palavra para "garra" do alto alemão antigo.
-            Nos Alpes, Krampus é representado por uma criatura semelhante a um demônio.';
+        tituloH2.textContent = quemÉ;
     } else {
-        tituloH2.textContent = 'O que é o Natal?';
+        tituloH2.textContent = "O que é o Natal?";
     }
 
 
@@ -45,9 +48,9 @@ function toggleDarkMode() {
 
     // Verifica se o modo noturno está ativado
     if (document.body.classList.contains('dark-mode')) {
-        titulop.textContent = 'Qualquer coisa';
+        titulop.textContent = krampus;
     } else {
-        titulop.textContent = Historia ;
+        titulop.textContent = historia ;
     }
 
     const imagem = document.getElementById('logo1');
@@ -90,10 +93,7 @@ function toggleDarkMode() {
 
     // Verifica se o modo noturno está ativado
     if (document.body.classList.contains('dark-mode')) {
-        para2.textContent = "Krampus é uma figura lendária com raízes na Áustria, Baviera e Europa Central.
-            Ele é a contraparte demoníaca do Papai Noel e assusta crianças desobedientes durante o Natal.
-            Sua origem remonta a tradições pagãs e ele é representado como uma criatura com chifres, pele peluda e garras, punindo crianças más.
-            Atualmente, as celebrações do Krampus, como desfiles e festas, ganharam popularidade além de sua região de origem.";
+        para2.textContent  = origem;
     } else {
         para2.textContent = "Personagens do Natal" ;
     }

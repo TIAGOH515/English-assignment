@@ -136,6 +136,19 @@ section h2 {
     color: #e53935;
 }
 
+#Caixa-Personagem {
+    width: 800px;
+    margin: auto;
+}
+
+#Personagem {
+    display: inline-block;
+    border: 1px black solid;
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
 footer {
     text-align: center;
     background-color: red;
