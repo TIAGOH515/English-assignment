@@ -95,7 +95,7 @@ function toggleDarkMode() {
     if (document.body.classList.contains('dark-mode')) {
         para2.textContent  = origem;
     } else {
-        para2.textContent = "Personagens do Natal" ;
+        para2.textContent = "A história do Natal é a celebração do nascimento de Jesus Cristo, central para o Cristianismo. Ela evoluiu ao longo dos séculos, mesclando influências religiosas, culturais e históricas. O Natal tem raízes em festivais de inverno pagãos e foi fixado em 25 de dezembro para coincidir com o Sol Invicto romano. Tradições como árvores de Natal, presentes e a figura de São Nicolau (Papai Noel) foram se incorporando. Hoje, o Natal é uma festa global, combinando aspectos religiosos e culturais, unindo famílias e promovendo a generosidade e a alegria.";
     }
 
     const audio = document.getElementById('audio');
