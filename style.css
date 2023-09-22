@@ -3,6 +3,10 @@
     src: url(./Mooli-Regular.ttf);
 }
 
+body {
+    margin: 0;
+}
+
 .white-mode {
     font-family: Mooli;
     max-width: 2000px;
@@ -20,6 +24,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
+
 }
 
 header h1 {
@@ -33,7 +38,7 @@ header h1 {
     color: white;
 }
 
-.dark-mode a {
+.dark-mode > a {
     color: #ff5722;
 }
 
@@ -69,7 +74,7 @@ nav {
 }
 
 /* Estilo para destacar o link ativo no menu */
-nav a.active {
+nav > a.active {
     color: #e53935;
 }
 
@@ -113,7 +118,7 @@ section {
     padding: 10px;
 }
 
-section p {
+section > p {
     font-size: 30px;
 
 }
@@ -136,17 +141,31 @@ section h2 {
     color: #e53935;
 }
 
-#Caixa-Personagem {
+.Caixa-Personagem {
     width: 800px;
     margin: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    grid-gap: 50px;
 }
 
-#Personagem {
+.Personagem {
+    width: 200px;
     display: inline-block;
     border: 1px black solid;
     padding: 20px;
-    margin: 30px;
-    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.Personagem  img {
+    width: 150px;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
 }
 
 footer {
@@ -154,6 +173,10 @@ footer {
     background-color: red;
     color: white;
     padding: 10px 0;
+}
+
+.Personagem > a{
+    color: black;
 }
 
 
