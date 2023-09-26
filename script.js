@@ -1,4 +1,4 @@
-var historia = "O Natal é uma festa cristã que celebra o nascimento de Jesus Cristo e também é uma celebração cultural. Suas características incluem missas religiosas, montagem de árvores de Natal decoradas, troca de presentes, decorações festivas, a figura de São Nicolau (Papai Noel), músicas natalinas e refeições especiais. O Natal promove o espírito de generosidade, solidariedade e união familiar e comunitária."
+var historia = "Natal é uma festa comemorada em muitos lugares do mundo, incluindo os Estados Unidos, para celebrar o nascimento de Jesus Cristo. É uma época de alegria, amor, dar presentes e estar com a família e amigos. As pessoas costumam decorar árvores de Natal, trocar presentes e compartilhar refeições especiais."
 
 var krampus = "Krampus é uma criatura mitológica que acompanha São Nicolau durante a época do Natal, segundo lendas de várias regiões do mundo.A palavra Krampus vem de Krampen, palavra para 'garra' do alto alemão antigo.Nos Alpes, Krampus é representado por uma criatura semelhante a um demônio."
 
@@ -22,6 +22,16 @@ function highlightActivePage() {
 // Função para alternar o modo noturno e o título da página
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode'); // Alterna a classe 'dark-mode' no corpo
+
+// Seleciona o título h1
+    const tituloH = document.getElementById('tituloH');
+
+    // Verifica se o modo noturno está ativado
+    if (document.body.classList.contains('dark-mode')) {
+        tituloH.textContent = 'Origem';
+    } else {
+        tituloH.textContent = 'Origem Estadunidense';
+    }
 
     // Seleciona o título h1
     const tituloH1 = document.querySelector('h1');
@@ -50,7 +60,7 @@ function toggleDarkMode() {
     if (document.body.classList.contains('dark-mode')) {
         titulop.textContent = krampus;
     } else {
-        titulop.textContent = historia ;
+        titulop.textContent = historia;
     }
 
     const imagem = document.getElementById('logo1');
@@ -68,43 +78,35 @@ function toggleDarkMode() {
     if (document.body.classList.contains('dark-mode')) {
         menu1.textContent = 'Quem é Krampus?';
     } else {
-        menu1.textContent = "O que é o Natal?" ;
+        menu1.textContent = "O que é o Natal?";
     }
 
-    const menu2 = document.getElementById('segundo');
-
-    // Verifica se o modo noturno está ativado
-    if (document.body.classList.contains('dark-mode')) {
-        menu2.textContent = 'Origem';
-    } else {
-        menu2.textContent = "Historia do Natal" ;
-    }
 
     const menu3 = document.getElementById('terceiro');
 
     // Verifica se o modo noturno está ativado
     if (document.body.classList.contains('dark-mode')) {
-        menu3.textContent = 'Video';
+        menu3.textContent = '';
     } else {
-        menu3.textContent = "Personagens do Natal" ;
+        menu3.textContent = "Personagens";
     }
 
     const para2 = document.getElementById('paragrafo2');
 
     // Verifica se o modo noturno está ativado
     if (document.body.classList.contains('dark-mode')) {
-        para2.textContent  = origem;
+        para2.textContent = origem;
     } else {
-        para2.textContent = "A história do Natal é a celebração do nascimento de Jesus Cristo, central para o Cristianismo. Ela evoluiu ao longo dos séculos, mesclando influências religiosas, culturais e históricas. O Natal tem raízes em festivais de inverno pagãos e foi fixado em 25 de dezembro para coincidir com o Sol Invicto romano. Tradições como árvores de Natal, presentes e a figura de São Nicolau (Papai Noel) foram se incorporando. Hoje, o Natal é uma festa global, combinando aspectos religiosos e culturais, unindo famílias e promovendo a generosidade e a alegria.";
+        para2.textContent = "O Natal foi introduzido nos Estados Unidos pelos colonos europeus, com influências de várias tradições, como as festas de inverno germânicas e o cristianismo. As primeiras celebrações de Natal nos EUA eram modestas e variavam de acordo com as tradições das diferentes comunidades coloniais.";
     }
 
     const audio = document.getElementById('audio');
 
     // Verifica se o modo noturno está ativado
     if (document.body.classList.contains('dark-mode')) {
-        audio.innerHTML = '<audio preload="metadata" autoplay controls><source src="Ameno.mp3" type="audio/mpeg"></audio>';
-    }else {
-        audio.innerHTML = '<audio preload="metadata" autoplay controls><source src="Natal.mp3" type="audio/mpeg"></audio>'
+        audio.innerHTML = '<audio preload="metadata" autoplay controls loop><source src="Ameno.mp3" type="audio/mpeg"></audio>';
+    } else {
+        audio.innerHTML = '<audio preload="metadata" autoplay controls loop><source src="Natal.mp3" type="audio/mpeg"></audio>'
     }
 }
 // Adiciona um ouvinte de evento para o botão de alternância de modo noturno

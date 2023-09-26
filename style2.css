@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Mooli;
+    src: url(Mooli-Regular.ttf);
+}
+
+body {
+    font-family: Mooli, Arial, Helvetica, sans-serif;
+}
+
+header {
+    max-width: 2000px;
+    min-width: 980px;
+    margin: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+nav {
+    max-width: 1500px;
+    min-width: 980px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
+
+
+#logo {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 70px;
+    top: -20px;
+}
+
+nav>a.active {
+    color: #e53935;
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    width: 600px;
+    list-style-type: none;
+    margin: auto;
+    vertical-align: auto;
+}
+
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+main > h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+main > img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border: solid 1px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+main > div {
+    width: 800px;
+    margin: auto;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main p {
+    font-size: 30px;
+}

@@ -3,10 +3,6 @@
     src: url(./Mooli-Regular.ttf);
 }
 
-body {
-    margin: 0;
-}
-
 .white-mode {
     font-family: Mooli;
     max-width: 2000px;
@@ -38,7 +34,7 @@ header h1 {
     color: white;
 }
 
-.dark-mode > a {
+.dark-mode>a {
     color: #ff5722;
 }
 
@@ -49,6 +45,11 @@ header h1 {
 .dark-mode p {
     color: black;
 }
+
+.dark-mode li {
+    color: black;
+}
+
 
 nav {
     max-width: 1500px;
@@ -74,7 +75,7 @@ nav {
 }
 
 /* Estilo para destacar o link ativo no menu */
-nav > a.active {
+nav>a.active {
     color: #e53935;
 }
 
@@ -118,12 +119,26 @@ section {
     padding: 10px;
 }
 
-section > p {
+section>p {
     font-size: 30px;
 
 }
 
-#experiencia h1, p{
+#caracteristicas>h1 {
+    text-align: center;
+    border: solid 1px;
+    background-color: #e53935;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+}
+
+#caracteristicas>ul>li {
+    font-size: 30px;
+}
+
+#experiencia h1,
+p {
     text-align: center;
 }
 
@@ -145,27 +160,55 @@ section h2 {
     width: 800px;
     margin: auto;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
     grid-gap: 50px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 }
 
 .Personagem {
-    width: 200px;
-    display: inline-block;
+    width: 180px;
     border: 1px black solid;
-    padding: 20px;
     border-radius: 20px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px 4px grey;
 }
 
-.Personagem  img {
-    width: 150px;
-    height: 200px;
+.Personagem img {
+    width: 140px;
+    height: 170px;
     border: 2px solid;
     border-radius: 20px;
     display: block;
     margin: auto;
+}
+
+.Personagem>a {
+    color: black;
+}
+
+video {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+#video {
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    
+}
+
+
+#Download>a>p {
+    color: black;
+    font-size: 30px;
+    background-color: greenyellow;
+    text-align: center;
 }
 
 footer {
@@ -175,9 +218,6 @@ footer {
     padding: 10px 0;
 }
 
-.Personagem > a{
-    color: black;
-}
 
 
 #rodapé {
